@@ -1,0 +1,95 @@
+.box {
+    display: flex;
+    justify-content: center;
+}
+
+.profile_Panel {
+    display: grid;
+    grid-template: 1fr 1fr/ 1fr;
+    background-color: #f2f2f2e3;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.SubPanel {
+    display: grid;
+    grid-template: 1fr 1fr 1fr/1fr 4fr 1fr;
+    height: 70%;
+    padding: 10px;
+}
+
+#bio {
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#followers_post {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#followPanel {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#main_area {
+    background-color: #93c2ff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#body_area {
+    background-color: #f2f2f2e3;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+button {
+    background-color: #1596ff;
+    color: white;
+    border-radius: 15px;
+    width: 30%;
+    height: 60%;
+}
+
+button:hover {
+    background-color: #1596ffc0;
+    cursor: pointer;
+}
+
+#Profile_Picture {
+    padding-top: 50px;
+    width: 30%;
+}
+
+#post {
+    padding: 30px;
+}
+
+#following {
+    padding: 30px;
+}
+
+#followers {
+    padding: 30px;
+}

@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block css %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}"> {% endblock %} {% block main %}
+
+<div class="profile_Panel">
+    <div id="main_area">
+        <img id="Profile_Picture" src="{{ url_for('static', filename = 'img/profilePic.svg')}}">
+        <h2> {{ name }} </h2>
+        <h6> {{username}} </h6>
+        <h6> {{location}} </h6>
+        <h6> {{today}} </h6>
+    </div>
+
+    <div id="body_area">
+        <div class="SubPanel">
+            <div id="bio">
+                <p> I am an extremely intelligent young man with a love for Website Design and Development, Database Management and Graphics. Please feel free to contact me if you want to work with me in the future.
+                </p>
+            </div>
+
+            <div id="followers_post">
+                <div class="box">
+                    <div id="post">
+                        <h5> <b>124</b> </h5>
+                        <h5> Post </h5>
+                    </div>
+
+                    <div id="following">
+                        <h5> <b>100</b> </h5>
+                        <h5> Following </h5>
+                    </div>
+
+                    <div id="followers">
+                        <h5> <b>250</b> </h5>
+                        <h5>Followers</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div id="followPanel" class="follow_button_container">
+                <button id="follow_botton" type="button"> <b> Follow </b> </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+{%endblock%}
